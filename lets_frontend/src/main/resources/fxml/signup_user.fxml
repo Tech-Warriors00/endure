@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="72.0" layoutY="13.0" text="SignUp as Customer">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="31.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="409.0" layoutY="128.0" prefHeight="438.0" prefWidth="317.0">
+         <children>
+            <TextField fx:id="name" layoutY="2.0" prefHeight="25.0" prefWidth="317.0" promptText="Name" />
+            <TextField fx:id="city" layoutY="104.0" prefHeight="25.0" prefWidth="172.0" promptText="State" />
+            <TextField fx:id="pinCode" layoutX="180.0" layoutY="104.0" prefHeight="25.0" prefWidth="137.0" promptText="PIN Code" />
+            <TextField fx:id="phone" layoutY="139.0" prefHeight="25.0" prefWidth="317.0" promptText="Phone Number (10 digit)" />
+            <PasswordField fx:id="password" layoutY="225.0" prefHeight="25.0" prefWidth="317.0" promptText="Enter Password" />
+            <PasswordField fx:id="confirmPassword" layoutY="259.0" prefHeight="25.0" prefWidth="317.0" promptText="Confirm Password" />
+            <Button fx:id="submit" layoutX="85.0" layoutY="312.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #e6b800;" text="Submit" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <TextField fx:id="code" layoutX="42.0" layoutY="364.0" prefHeight="25.0" prefWidth="234.0" promptText="Enter Verification Code" />
+            <Button fx:id="confirm" layoutX="91.0" layoutY="404.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" style="-fx-background-color: #00b33c;" text="Confirm" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="-1.0" layoutY="210.0" text="Password" />
+            <TextField fx:id="email" layoutY="173.0" prefHeight="25.0" prefWidth="317.0" promptText="Email ID" />
+            <TextField fx:id="address" layoutX="-1.0" layoutY="36.0" prefHeight="25.0" prefWidth="317.0" promptText="Neighbourhood/Locality/Colony" />
+            <TextField fx:id="pinCode1" layoutX="180.0" layoutY="70.0" prefHeight="25.0" prefWidth="137.0" promptText="City" />
+            <TextField fx:id="city1" layoutY="70.0" prefHeight="25.0" prefWidth="172.0" promptText="Area" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

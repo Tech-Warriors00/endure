@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lets_frontend.OwnerHomepageController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="1100.0" style="-fx-background-color: #3333ff;">
+         <children>
+            <Label layoutX="14.0" layoutY="19.0" text="Endure" textFill="WHITE">
+               <font>
+                  <Font name="Microsoft JhengHei UI Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="60.0" prefHeight="38.0" prefWidth="1100.0" style="-fx-background-color: #99b3ff;">
+         <children>
+            <HBox layoutX="8.0" layoutY="7.0" prefHeight="25.0" prefWidth="1090.0" style="-fx-background-color: #99b3ff;">
+               <children>
+                  <Button fx:id="aboutApp" mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #996633;" text="About App" textFill="WHITE" />
+                  <Label text="    " />
+                  <Button fx:id="batch" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Batch" textFill="WHITE" />
+                  <Label text="    " />
+                  <Button fx:id="refresh" mnemonicParsing="false" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: #0066cc;" text="Refresh" textFill="WHITE" />
+                  <Label text="                                                                               " />
+                  <Label text="                               " />
+                  <Label text="  " />
+                  <Label text="    " />
+                  <Button fx:id="deactivateAccount" mnemonicParsing="false" prefHeight="25.0" prefWidth="155.0" style="-fx-background-color: #5c5c8a;" text="Deactivate Account" textFill="WHITE" />
+                  <Label text="    " />
+                  <Button fx:id="logout" mnemonicParsing="false" prefHeight="25.0" prefWidth="79.0" style="-fx-background-color: #ff6666;" text="Logout" textFill="WHITE" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="98.0" prefHeight="505.0" prefWidth="1100.0">
+         <children>
+            <AnchorPane layoutY="-1.0" prefHeight="499.0" prefWidth="283.0">
+               <children>
+                  <Label layoutX="13.0" layoutY="21.0" text="Complaints">
+                     <font>
+                        <Font name="Microsoft JhengHei UI" size="22.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="10.0" layoutY="52.0" prefHeight="5.0" prefWidth="264.0" />
+                  <ScrollPane layoutX="14.0" layoutY="71.0" prefHeight="199.0" prefWidth="260.0">
+                     <content>
+                        <VBox fx:id="complaintBox" prefHeight="196.0" prefWidth="239.0" />
+                     </content>
+                  </ScrollPane>
+                  <HBox fx:id="customerBox" layoutX="13.0" layoutY="330.0" prefHeight="164.0" prefWidth="258.0" />
+                  <Separator layoutX="9.0" layoutY="316.0" prefHeight="5.0" prefWidth="264.0" />
+                  <Label layoutX="12.0" layoutY="285.0" text="Nearby Customers">
+                     <font>
+                        <Font name="Microsoft JhengHei UI" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="812.0" prefHeight="505.0" prefWidth="289.0">
+               <children>
+                  <ScrollPane layoutX="-3.0" layoutY="111.0" prefHeight="345.0" prefWidth="289.0">
+                     <content>
+                        <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="676.0" prefWidth="270.0">
+                           <children>
+                              <TextField fx:id="shopName" layoutX="33.0" layoutY="26.0" prefHeight="25.0" prefWidth="214.0" promptText="Shop Name" />
+                              <TextField fx:id="ownerName" layoutX="33.0" layoutY="76.0" prefHeight="25.0" prefWidth="214.0" promptText="Owner Name" />
+                              <ComboBox fx:id="shopType" layoutX="33.0" layoutY="128.0" prefHeight="25.0" prefWidth="214.0" promptText="Shop Type" />
+                              <TextArea fx:id="address" layoutX="33.0" layoutY="187.0" prefHeight="164.0" prefWidth="214.0" promptText="Address" />
+                              <TextField fx:id="phone" layoutX="33.0" layoutY="380.0" prefHeight="25.0" prefWidth="214.0" promptText="Phone" />
+                              <Label layoutX="33.0" layoutY="423.0" text="Opening days">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Separator layoutX="33.0" layoutY="445.0" prefHeight="3.0" prefWidth="214.0" />
+                              <VBox layoutX="33.0" layoutY="462.0" prefHeight="37.0" prefWidth="214.0">
+                                 <children>
+                                    <HBox prefHeight="20.0" prefWidth="200.0">
+                                       <children>
+                                          <CheckBox fx:id="mon" mnemonicParsing="false" text="Mon   " />
+                                          <CheckBox fx:id="tue" mnemonicParsing="false" text="Tue   " />
+                                          <CheckBox fx:id="wed" mnemonicParsing="false" text="Wed   " />
+                                          <CheckBox fx:id="thu" mnemonicParsing="false" text="Thu" />
+                                       </children>
+                                    </HBox>
+                                    <Label>
+                                       <font>
+                                          <Font size="4.0" />
+                                       </font>
+                                    </Label>
+                                    <HBox prefHeight="20.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="            " />
+                                          <CheckBox fx:id="fri" mnemonicParsing="false" text="Fri   " />
+                                          <CheckBox fx:id="sat" mnemonicParsing="false" text="Sat   " />
+                                          <CheckBox fx:id="sun" mnemonicParsing="false" text="Sun" />
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Separator layoutX="33.0" layoutY="548.0" prefHeight="3.0" prefWidth="214.0" />
+                              <Label layoutX="33.0" layoutY="526.0" text="Batch Preference">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <VBox layoutX="49.0" layoutY="562.0" prefHeight="92.0" prefWidth="177.0">
+                                 <children>
+                                    <CheckBox fx:id="b1" mnemonicParsing="false" text="Batch 1 (6 AM - 10 AM)" />
+                                    <Label>
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="b2" mnemonicParsing="false" text="Batch 2 (10 AM - 2 PM)" />
+                                    <Label>
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="b3" mnemonicParsing="false" text="Batch 3 (2 PM - 6 PM)" />
+                                    <Label>
+                                       <font>
+                                          <Font size="5.0" />
+                                       </font>
+                                    </Label>
+                                    <CheckBox fx:id="b4" mnemonicParsing="false" text="Batch 4 (6 PM - 10 PM)" />
+                                 </children>
+                              </VBox>
+                              <Label layoutX="35.0" layoutY="9.0" text="Shop Name" />
+                              <Label layoutX="34.0" layoutY="61.0" text="Owner Name" />
+                              <Label layoutX="34.0" layoutY="110.0" text="Shop Type" />
+                              <Label layoutX="35.0" layoutY="171.0" text="Address" />
+                              <Label layoutX="35.0" layoutY="363.0" text="Phone" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="save" layoutX="94.0" layoutY="466.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #88cc00;" text="Save" textFill="WHITE" />
+                  <Label layoutX="6.0" layoutY="68.0" text="Shop ID:" />
+                  <Label layoutX="5.0" layoutY="85.0" text="Email Address:" />
+                  <Label fx:id="shopId" layoutX="60.0" layoutY="67.0" text="Label">
+                     <font>
+                        <Font size="12.5" />
+                     </font>
+                  </Label>
+                  <Label fx:id="email" layoutX="89.0" layoutY="84.0" text="Label">
+                     <font>
+                        <Font size="12.5" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Separator layoutX="818.0" layoutY="54.0" prefHeight="5.0" prefWidth="272.0" />
+            <Label layoutX="816.0" layoutY="23.0" text="Update Info">
+               <font>
+                  <Font name="Microsoft JhengHei UI" size="22.0" />
+               </font>
+            </Label>
+            <HBox layoutX="306.0" layoutY="270.0" prefHeight="154.0" prefWidth="450.0" />
+            <ScrollPane layoutX="280.0" layoutY="3.0" prefHeight="499.0" prefWidth="529.0">
+               <content>
+                  <AnchorPane prefHeight="818.0" prefWidth="514.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="18.0" text="Batch Alloted for today">
+                           <font>
+                              <Font name="Microsoft JhengHei UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="7.0" layoutY="47.0" prefHeight="5.0" prefWidth="450.0" />
+                        <Separator layoutX="7.0" layoutY="314.0" prefHeight="5.0" prefWidth="450.0" />
+                        <Label layoutX="14.0" layoutY="285.0" text="Other days batch allotment detils">
+                           <font>
+                              <Font name="Microsoft JhengHei UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="542.0" text="Other shop owners near me">
+                           <font>
+                              <Font name="Microsoft JhengHei UI" size="20.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="7.0" layoutY="571.0" prefHeight="5.0" prefWidth="450.0" />
+                        <RadioButton fx:id="shopAll" layoutX="21.0" layoutY="585.0" mnemonicParsing="false" text="All" />
+                        <RadioButton fx:id="shopSameCategory" layoutX="71.0" layoutY="585.0" mnemonicParsing="false" text="Same shop category" />
+                        <RadioButton fx:id="myBatch" layoutX="218.0" layoutY="585.0" mnemonicParsing="false" text="My batch" />
+                        <HBox fx:id="shopBox" layoutX="32.0" layoutY="622.0" prefHeight="154.0" prefWidth="450.0" />
+                        <HBox fx:id="otherBatchBox" layoutX="32.0" layoutY="362.0" prefHeight="154.0" prefWidth="450.0" />
+                        <HBox fx:id="todayBatchBox" layoutX="32.0" layoutY="106.0" prefHeight="154.0" prefWidth="450.0" />
+                        <HBox layoutX="21.0" layoutY="331.0" prefHeight="17.0" prefWidth="308.0">
+                           <children>
+                              <RadioButton fx:id="future" mnemonicParsing="false" text="Upcoming allotments" />
+                              <Label text="     " />
+                              <RadioButton fx:id="past" mnemonicParsing="false" text="Allotment History" />
+                           </children>
+                        </HBox>
+                        <Label layoutX="32.0" layoutY="70.0" text="Today is">
+                           <font>
+                              <Font name="Arial" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="today" layoutX="93.0" layoutY="67.0" text="today">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
