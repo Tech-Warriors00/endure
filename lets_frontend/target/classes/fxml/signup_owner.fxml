@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lets_frontend.SignupOwnerController">
+   <children>
+      <ScrollPane layoutY="87.0" prefHeight="513.0" prefWidth="1100.0">
+         <content>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="2203.0" prefWidth="1081.0">
+               <children>
+                  <Label layoutX="21.0" layoutY="24.0" text="Personal Information">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="21.0" layoutY="64.0" prefHeight="5.0" prefWidth="1053.0" />
+                  <AnchorPane layoutX="355.0" layoutY="97.0" prefHeight="222.0" prefWidth="385.0">
+                     <children>
+                        <TextField fx:id="shopName" layoutX="2.0" layoutY="2.0" prefHeight="25.0" prefWidth="379.0" promptText="Shop Name" />
+                        <TextField fx:id="ownerName" layoutX="2.0" layoutY="40.0" prefHeight="25.0" prefWidth="379.0" promptText="Owner Name" />
+                        <ComboBox fx:id="shopType" layoutX="3.0" layoutY="78.0" prefHeight="25.0" prefWidth="379.0" promptText="Shop Type" />
+                        <TextField fx:id="phone" layoutX="4.0" layoutY="150.0" prefHeight="25.0" prefWidth="379.0" promptText="Phone" />
+                        <TextField fx:id="email" layoutX="4.0" layoutY="188.0" prefHeight="25.0" prefWidth="379.0" promptText="Email Address" />
+                     </children>
+                  </AnchorPane>
+                  <Separator layoutX="21.0" layoutY="402.0" prefHeight="5.0" prefWidth="1053.0" />
+                  <Label layoutX="21.0" layoutY="362.0" text="Time Scheduling">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutX="355.0" layoutY="448.0" prefHeight="269.0" prefWidth="388.0">
+                     <children>
+                        <Label layoutX="2.0" layoutY="1.0" text="Choose the days on which your shop will be open">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="3.0" layoutY="44.0" prefHeight="20.0" prefWidth="385.0">
+                           <children>
+                              <CheckBox fx:id="mon" mnemonicParsing="false" text="Mon    " />
+                              <CheckBox fx:id="tue" mnemonicParsing="false" text="Tue     " />
+                              <CheckBox fx:id="wed" mnemonicParsing="false" text="Wed     " />
+                              <CheckBox fx:id="thu" mnemonicParsing="false" text="Thu     " />
+                              <CheckBox fx:id="fri" mnemonicParsing="false" text="Fri     " />
+                              <CheckBox fx:id="sat" mnemonicParsing="false" text="Sat     " />
+                              <CheckBox fx:id="sun" mnemonicParsing="false" text="Sun" />
+                           </children>
+                        </HBox>
+                        <Separator layoutY="21.0" prefHeight="5.0" prefWidth="388.0" />
+                        <Separator layoutY="121.0" prefHeight="5.0" prefWidth="388.0" />
+                        <Label layoutX="2.0" layoutY="101.0" text="Choose preferable batch timing">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="61.0" layoutY="149.0" prefHeight="109.0" prefWidth="287.0">
+                           <children>
+                              <CheckBox fx:id="b1" mnemonicParsing="false" text="Batch 1 (6:00 AM - 10:00 AM)" />
+                              <Label />
+                              <CheckBox fx:id="b2" mnemonicParsing="false" text="Batch 2 (10:00 AM - 2:00 PM)" />
+                              <Label />
+                              <CheckBox fx:id="b3" mnemonicParsing="false" text="Batch 3 (2:00 PM - 6:00 PM)" />
+                              <Label />
+                              <CheckBox fx:id="b4" mnemonicParsing="false" text="Batch 4 (6:00 PM - 10:00 PM)" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="21.0" layoutY="743.0" text="Address Details">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="21.0" layoutY="783.0" prefHeight="5.0" prefWidth="1053.0" />
+                  <Label layoutX="75.0" layoutY="808.0" text="Enter details of address correctly so that your customers can locate you. Copy-paste your address from Google Maps for more accuracy.">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <WebView fx:id="map" layoutX="99.0" layoutY="875.0" prefHeight="599.0" prefWidth="898.0" />
+                  <Separator layoutX="22.0" layoutY="1514.0" prefHeight="5.0" prefWidth="1053.0" />
+                  <Label layoutX="75.0" layoutY="1536.0" text="Enter address details">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="colony" layoutX="200.0" layoutY="1573.0" prefHeight="25.0" prefWidth="581.0" promptText="Neighbourhood/Locality/Colony" />
+                  <TextField fx:id="pinCode" layoutX="200.0" layoutY="1610.0" prefHeight="25.0" prefWidth="249.0" promptText="Area" />
+                  <TextField fx:id="area" layoutX="456.0" layoutY="1610.0" prefHeight="25.0" prefWidth="251.0" promptText="City" />
+                  <TextField fx:id="city" layoutX="713.0" layoutY="1610.0" prefHeight="25.0" prefWidth="184.0" promptText="State" />
+                  <TextField fx:id="state" layoutX="787.0" layoutY="1573.0" prefHeight="25.0" prefWidth="108.0" promptText="PIN Code" />
+                  <Separator layoutX="21.0" layoutY="1714.0" prefHeight="5.0" prefWidth="1053.0" />
+                  <Label layoutX="21.0" layoutY="1674.0" text="Password and Confirmation">
+                     <font>
+                        <Font size="27.0" />
+                     </font>
+                  </Label>
+                  <PasswordField fx:id="password" layoutX="423.0" layoutY="1748.0" prefHeight="25.0" prefWidth="249.0" promptText="Password" />
+                  <PasswordField fx:id="confirmPassword" layoutX="423.0" layoutY="1786.0" prefHeight="25.0" prefWidth="249.0" promptText="Confirm Password" />
+                  <Separator layoutX="22.0" layoutY="1883.0" prefHeight="5.0" prefWidth="1053.0" />
+                  <Label layoutX="29.0" layoutY="1855.0" text="Submit Registration Form">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="submit" layoutX="473.0" layoutY="1969.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Submit" />
+                  <CheckBox fx:id="tick" layoutX="74.0" layoutY="1921.0" mnemonicParsing="false" text="I have checked and confirmed that all data entered here are correct and valid.">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <Label layoutX="29.0" layoutY="2021.0" text="Account Verification">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="22.0" layoutY="2049.0" prefHeight="5.0" prefWidth="1053.0" />
+                  <TextField fx:id="code" layoutX="438.0" layoutY="2088.0" prefHeight="25.0" prefWidth="223.0" promptText="Enter the 6 digit code" />
+                  <Button fx:id="confirm" layoutX="474.0" layoutY="2132.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Confirm" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+      <Label layoutX="72.0" layoutY="13.0" text="SignUp as Shop-Owner">
+         <font>
+            <Font name="Arial Rounded MT Bold" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="back" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" text="Back" />
+   </children>
+</AnchorPane>

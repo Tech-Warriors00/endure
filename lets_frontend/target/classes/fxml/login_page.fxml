@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lets_frontend.LoginPageController">
+   <children>
+      <Label layoutX="451.0" layoutY="93.0" text="Endure">
+         <font>
+            <Font name="Century Gothic Bold" size="59.0" />
+         </font>
+      </Label>
+      <Label layoutX="444.0" layoutY="181.0" text="Let's collaborate unitedly.">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Separator layoutX="215.0" layoutY="169.0" prefHeight="0.0" prefWidth="671.0" />
+      <TextField fx:id="email" layoutX="391.0" layoutY="323.0" prefHeight="25.0" prefWidth="321.0" promptText="Email Address" />
+      <PasswordField fx:id="password" layoutX="390.0" layoutY="361.0" prefHeight="25.0" prefWidth="321.0" promptText="Password" />
+      <RadioButton fx:id="asUser" layoutX="391.0" layoutY="256.0" mnemonicParsing="false" text="Login as Customer" />
+      <RadioButton fx:id="asOwner" layoutX="391.0" layoutY="283.0" mnemonicParsing="false" text="Login as Owner" />
+      <Button fx:id="login" layoutX="491.0" layoutY="403.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Login" />
+      <Button fx:id="signupUser" layoutX="445.0" layoutY="561.0" mnemonicParsing="false" text="Customer," />
+      <Button fx:id="signupOwner" layoutX="515.0" layoutY="561.0" mnemonicParsing="false" text="Owner" />
+      <Label layoutX="391.0" layoutY="565.0" text="SignUp as" />
+      <Button fx:id="forgotPassword" layoutX="607.0" layoutY="561.0" mnemonicParsing="false" text="Forgot Password" />
+   </children>
+</AnchorPane>
