@@ -132,18 +132,7 @@ public class LoginPageController {
     					
     					System.out.println("Logged In");
     					Index.connectedEmail = email.getText().toLowerCase().trim();
-    					// go to HomePageOwner
-    					try {
-    						Parent loader = FXMLLoader.load(getClass().getResource("/fxml/owner_home_page.fxml"));
-    						
-    						Scene scene = login.getScene();
-    						Window window = scene.getWindow();
-    						Stage stage = (Stage) window;
-    						
-    						login.getScene().setRoot(loader);
-    						
-    					}catch(Exception exp) {
-    						System.out.println("Going to Owner page: " + exp);
+    					// TODO
     					}
     					
     				}else {
